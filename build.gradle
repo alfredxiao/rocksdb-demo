@@ -31,9 +31,9 @@ test {
 
 jar {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    
+
     manifest {
-        attributes "Main-Class": "xiaoyf.demo.rocksdb.helloword.HelloSstRocksDB"
+        attributes "Main-Class": "xiaoyf.demo.rocksdb.helloworld.HelloSstRocksDB"
     }
 
     from {
