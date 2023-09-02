@@ -18,7 +18,7 @@ import java.util.stream.LongStream;
 public class HelloSstRocksDB {
     File dbDir;
     RocksDB db;
-    
+
     public void demo(final long updateCount) {
         RocksDB.loadLibrary();
         final Options options = new Options();
