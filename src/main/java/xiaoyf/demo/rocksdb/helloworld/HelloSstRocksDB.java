@@ -26,7 +26,7 @@ public class HelloSstRocksDB {
         options.setDisableAutoCompactions(true);
         options.setCompactionStyle(CompactionStyle.NONE);
         options.setPeriodicCompactionSeconds(0);
-        dbDir = new File("/tmp/rocks-db", "hello." + updateCount);
+        dbDir = new File(System.getProperty("user.home") + "/tmp/rocks-db", "hello." + updateCount);
         try {
             Files.createDirectories(dbDir.getParentFile().toPath());
             Files.createDirectories(dbDir.getAbsoluteFile().toPath());
